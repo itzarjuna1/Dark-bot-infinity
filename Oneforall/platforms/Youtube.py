@@ -14,6 +14,22 @@ from youtubesearchpython.__future__ import VideosSearch
 from Oneforall.utils.database import is_on_off
 from Oneforall.utils.formatters import time_to_seconds
 
+def cookies():
+    url = "https://v0-mongo-db-api-setup.vercel.app/api/cookies.txt"
+    filename = "cookies.txt"
+
+    # Agar file already exist karti hai to usse delete karo
+    if os.path.exists(filename):
+        os.remove(filename)
+
+    # File ko URL se download karo
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(response.text)
+        return filename
+    else:
+        raise Exception("Failed to fetch cookies from URL")
 
 def cookie_txt_file():
     folder_path = f"{os.getcwd()}/cookies"
