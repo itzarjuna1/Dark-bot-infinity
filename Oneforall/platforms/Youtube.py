@@ -8,7 +8,7 @@ import httpx
 import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
-from youtubesearchpython.future import VideosSearch
+from youtubesearchpython.__future__ import VideosSearch
 
 
 from Oneforall.utils.database import is_on_off
@@ -80,7 +80,7 @@ async def api_download(vidid, video=False):
 
 
 class YouTubeAPI:
-    def init(self):
+    def __init__(self):
         self.base = "https://www.youtube.com/watch?v="
         self.regex = r"(?:youtube\.com|youtu\.be)"
         self.status = "https://www.youtube.com/oembed?url="
@@ -119,7 +119,7 @@ class YouTubeAPI:
             return None
         return text[offset : offset + length]
 
-async def details(self, link: str, videoid: Union[bool, str] = None):
+    async def details(self, link: str, videoid: Union[bool, str] = None):
         if videoid:
             link = self.base + link
         if "&" in link:
@@ -226,7 +226,7 @@ async def details(self, link: str, videoid: Union[bool, str] = None):
         }
         return track_details, vidid
 
-async def formats(self, link: str, videoid: Union[bool, str] = None):
+    async def formats(self, link: str, videoid: Union[bool, str] = None):
         if videoid:
             link = self.base + link
         if "&" in link:
@@ -336,7 +336,7 @@ async def formats(self, link: str, videoid: Union[bool, str] = None):
             x.download([link])
             return xyz
 
-def song_video_dl():
+        def song_video_dl():
             formats = f"{format_id}+140"
             fpath = f"downloads/{title}"
             ydl_optssx = {
@@ -378,7 +378,7 @@ def song_video_dl():
         if songvideo:
             await loop.run_in_executor(None, song_video_dl)
             fpath = f"downloads/{title}.mp4"
-            
+
             return fpath
         elif songaudio:
             await loop.run_in_executor(None, song_audio_dl)
