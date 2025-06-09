@@ -37,7 +37,7 @@ unidecode
 #git+https://github.com/joetats/youtube_search@master
 #git+https://github.com/alexmercerind/youtube-search-python@main
 https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.23.zip
-yt-dlp==2024.05.27  # latest as of June 2025
+git+https://github.com/yt-dlp/yt-dlp.git
 bing_image_downloader
 gpytranslate
 
