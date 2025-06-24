@@ -7,7 +7,7 @@ from youtubesearchpython.__future__ import VideosSearch
 
 import config
 from config import BANNED_USERS
-from Oneforall all import app
+from Oneforall import app
 from Oneforall.misc import _boot_
 from Oneforall.plugins.sudo.sudoers import sudoers_list
 from Oneforall.utils.database import (
