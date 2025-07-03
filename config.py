@@ -8,11 +8,11 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID", "22565342"))
-API_HASH = getenv("API_HASH", "75e035926f72f2f4155a6f5f6e64be03")
+API_ID = int(getenv("API_ID", "20346025"))
+API_HASH = getenv("API_HASH", "d34558796860a173cb5c918968fe85a0")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN","8048266755:AAHQ6HNkXL_Vmt-LF46R2n_ARBeLkynVlYA")
+BOT_TOKEN = getenv("BOT_TOKEN","7684739810:AAEeDvc0YzwfkBytqfc5lbGbKtRpK2gH8Wo")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://knight4563:knight4563@cluster0.a5br0se.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -22,7 +22,7 @@ PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 100000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1002576326140))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002842450420))
 
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", "7926944005"))
@@ -76,7 +76,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 # Get your pyrogram v2 session from @BRANDEDSTRINGSESSION_BOT on Telegram
 STRING1 = getenv("STRING_SESSION",  None)
-STRING2 = getenv("STRING_SESSION2", "BQFYUd4AaBQ-7rxbKMguDsyH8oJPUtsDN4JBK4J-P09mTvQkHm24IsRuD3VtdQi1nbxvR97mcLHog1Ke9s6dKIYskILAyeaNzfr7CayVeDm_hiY0XKz9Ge7BR8A4KXBFdpUy_9KA7t0yDheKWcdJOM-ArBjs40uUUIjyPd0tntz3tWArfLmttWkuUNI2LGmTn_EjZjBH_XRopuZNVsesynDa7C5z8a-5V_Z87OKlzkoQL8u5Tw34EYMA_0eBsdjuEs5-rU2gz80eDSdIf9e0Pf7vWxy8tPxRjNe6DROsj5-m-CEys1SIoF_Uaw0jCZo8lZRRFk_ezLpnp2zclT0dk3iCxJDPeQAAAAHjZt-vAA")
+STRING2 = getenv("STRING_SESSION2", "BQE2dKkAdaSY6yFDt3wmXdwDvgQjZ4brvEUkd83uptN2KU8PACEW0PPFxv2QfokogpMOZezY3frQys8ujtTIsYmcOAxgS0CoDkb2HtlTIlTUxFVdXV5YPnzRiuCBL4OPAE03ltAa1zAoRSTRING_SESSION=BQE2dKkAdaSY6yFDt3wmXdwDvgQjZ4brvEUkd83uptN2KU8PACEW0PPFxv2QfokogpMOZezY3frQys8ujtTIsYmcOAxgS0CoDkb2HtlTIlTUxFVdXV5YPnzRiuCBL4OPAE03ltAa1zAoRXxQ6R-52-K9NE564qqYM0WjptZtgCVt4lhMHDFb4bgcsej8wiCAGCdRCk_KIkIuMilZ8u21A9aGc32JehSNQl2ZrLXNHokcI_8ZoiY5k3cRH6FIZq12keaSXt5GyqgAOXKjvz8Z_YlEkRYiOkyUAQkJFdS35BdLYf1TKQf6Mf6S4b4Bvs66mHtMHE_vQPzBveWSDSVFgn1-yC5vEQAAAAHYSv4rAAXxQ6R-52-K9NE564qqYM0WjptZtgCVt4lhMHDFb4bgcsej8wiCAGCdRCk_KIkIuMilZ8u21A9aGc32JehSNQl2ZrLXNHokcI_8ZoiY5k3cRH6FIZq12keaSXt5GyqgAOXKjvz8Z_YlEkRYiOkyUAQkJFdS35BdLYf1TKQf6Mf6S4b4Bvs66mHtMHE_vQPzBveWSDSVFgn1-yC5vEQAAAAHYSv4rAA")
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
