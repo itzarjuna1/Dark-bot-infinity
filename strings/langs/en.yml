@@ -177,7 +177,7 @@ song_9 : "ꜰᴀɪʟᴇᴅ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ sᴏɴɢ ꜰʀᴏᴍ ʏ
 song_10 : "ꜰᴀɪʟᴇᴅ ᴛᴏ ᴜᴘʟᴏᴀᴅ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ sᴇʀᴠᴇʀs."
 song_11 : "ᴜᴘʟᴏᴀᴅɪɴɢ sᴛᴀʀᴛᴇᴅ ʙᴀʙʏ\n\nᴘʟᴇᴀsᴇ ʜᴏʟᴅ ᴏɴ..."
 
-play_1 : "🔎"
+play_1 : "🌸"
 play_2 : "<b>➻ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ ᴍᴏᴅᴇ</b>\n\nᴘʀᴏᴄᴇssɪɴɢ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...\n\n<b>ʟɪɴᴋᴇᴅ ᴄʜᴀɴɴᴇʟ :</b> {0}"
 play_3 : "» ғᴀɪʟᴇᴅ ᴛᴏ ᴘʀᴏᴄᴇss ǫᴜᴇʀʏ."
 play_4 : "<b>ᴀᴅᴍɪɴs ᴏɴʟʏ ᴘʟᴀʏ</b>\nᴏɴʟʏ ᴀᴅᴍɪɴs ᴏғ ᴛʜɪs ᴄʜᴀᴛ ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ\n\nᴄʜᴀɴɢᴇ ᴘʟᴀʏ ᴍᴏᴅᴇ ᴠɪᴀ /playmode"
@@ -218,9 +218,9 @@ queue_6 : "<b>🕚 ᴅᴜʀᴀᴛɪᴏɴ :</b> ᴜɴᴋɴᴏᴡɴ ᴅᴜʀᴀᴛ
 queue_7 : "\nᴄʟɪᴄᴋ ᴏɴ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴡʜᴏʟᴇ ǫᴜᴇᴜᴇᴅ ʟɪsᴛ."
 queue_8 : "<b>{0} ᴘʟᴀʏᴇʀ</b>\n\n🎄 <b>sᴛʀᴇᴀᴍɪɴɢ :</b> {1}\n\n🔗 <b>sᴛʀᴇᴀᴍ ᴛʏᴘᴇ :</b> {2}\n🥀 <b>ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {3}\n{4}"
 
-stream_1 : "❍ <b><blockquote> Sᴛᴀʀᴛᴇᴅ Sᴛʀᴇᴀᴍɪɴɢ |</blockquote></b>\n\n<b><blockquote>❍ Tɪᴛʟᴇ :</b> <a href={0}>{1}</a>\n</blockquote><b><blockquote>❍ Dᴜʀᴀᴛɪᴏɴ :</blockquote></b> {2} ᴍɪɴᴜᴛᴇs\n</blockquote><b><blockquote>❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</blockquote></b> {3}"
-stream_2 : "❍ <b><blockquote> Sᴛᴀʀᴛᴇᴅ Sᴛʀᴇᴀᴍɪɴɢ |</blockquote></b>\n\n<b><blockquote>❍ Sᴛʀᴇᴀᴍ ᴛʏᴘᴇ :</blockquote></b> ʟɪᴠᴇ sᴛʀᴇᴀᴍ [ᴜʀʟ]\n<b><blockquote>❍  Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {0} </blockquote><b><blockquote>Mᴀᴅᴇ ʙʏ ➠ [Ꭵтⲗᴄʜɪ ᴏᴡɴᴇʀ sʜᴜʙ](https://t.me/owner_of_itachi)</b>" 
-stream_3 : "❍ <b><blockquote> Mᴀᴅᴇ ʙʏ ➠ [Ꭵтⲗᴄʜɪ ᴏᴡɴᴇʀ sʜᴜʙ](https://t.me/DEPARTED_FR)</blockquote>"
+stream_1 : " <b><blockquote> ❍ Sᴛᴀʀᴛᴇᴅ Sᴛʀᴇᴀᴍɪɴɢ |</blockquote></b>\n\n<b><blockquote>❍ Tɪᴛʟᴇ :</b> <a href={0}>{1}</a>\n</blockquote><b><blockquote>❍ Dᴜʀᴀᴛɪᴏɴ :</b> {2} ᴍɪɴᴜᴛᴇs\n</blockquote><b><blockquote>❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</blockquote></b> {3}"
+stream_2 : " <b><blockquote> ❍ Sᴛᴀʀᴛᴇᴅ Sᴛʀᴇᴀᴍɪɴɢ |</blockquote></b>\n\n<b><blockquote>❍ Sᴛʀᴇᴀᴍ ᴛʏᴘᴇ :</blockquote></b> ʟɪᴠᴇ sᴛʀᴇᴀᴍ [ᴜʀʟ]\n<b><blockquote>❍  Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {0} </blockquote><b><blockquote>Mᴀᴅᴇ ʙʏ ➠ [Ꭵтⲗᴄʜɪ ᴏᴡɴᴇʀ sʜᴜʙ](https://t.me/owner_of_itachi)</b>" 
+stream_3 : " <b><blockquote> ❍ Mᴀᴅᴇ ʙʏ ➠ [Ꭵтⲗᴄʜɪ ᴏᴡɴᴇʀ sʜᴜʙ](https://t.me/DEPARTED_FR)</blockquote>"
 
 #General
 CLOSE_BUTTON  : "✘ ᴄʟᴏsᴇ ✘"
