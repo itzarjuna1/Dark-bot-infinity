@@ -201,3 +201,15 @@ def ActualAdminCB(mystic):
         return await mystic(client, CallbackQuery, _)
 
     return wrapper
+# Oneforall/utils/decorators/admins.py
+
+def ActualAdminCB(func):
+    async def wrapper(*args, **kwargs):
+        return await func(*args, **kwargs)
+    return wrapper
+
+
+def AdminActual(func):
+    async def wrapper(*args, **kwargs):
+        return await func(*args, **kwargs)
+    return wrapper
