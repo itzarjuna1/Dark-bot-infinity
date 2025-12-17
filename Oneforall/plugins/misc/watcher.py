@@ -3,7 +3,7 @@ from pyrogram.types import Message
 
 from Oneforall import app
 from Oneforall.core.call import Hotty
-from Oneforall.core.mongo import is_superbanned_user
+from Oneforall.core.database import is_superbanned_user
 
 # --- Existing watcher groups ---
 WELCOME_GROUP = 20
