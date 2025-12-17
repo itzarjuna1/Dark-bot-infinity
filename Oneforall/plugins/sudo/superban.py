@@ -1,12 +1,13 @@
-from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram import filters
+from Oneforall import app
 
-from config import LOG_CHANNEL, SUPERBAN_VIDEO
 from Oneforall.utils.decorators.admins import AdminRightsCheck
 from Oneforall.utils.database import (
     add_superban_user,
+    remove_superban_user,
     is_superbanned_user,
 )
+from config import LOG_CHANNEL, SUPERBAN_VIDEO
 
 from telegraph import Telegraph
 
@@ -15,7 +16,7 @@ telegraph.create_account(short_name="DarkInfinity")
 
 
 @Client.on_message(filters.command("superban") & filters.group)
-@AdminsOnly
+@AdminRightsCheck
 async def superban(_, message):
     if not message.reply_to_message:
         return await message.reply_text("Reply to a user to superban.")
