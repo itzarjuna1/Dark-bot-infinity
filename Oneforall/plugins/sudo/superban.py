@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from Oneforall.config import LOG_CHANNEL, SUPERBAN_VIDEO
+from config import LOG_CHANNEL, SUPERBAN_VIDEO
 from Oneforall.decorators.admins import AdminsOnly
 from Oneforall.core.mongo import (
     add_superban_user,
