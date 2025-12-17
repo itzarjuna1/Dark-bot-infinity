@@ -981,3 +981,40 @@ async def add_served_chat_clone(chat_id: int):
 async def delete_served_chat_clone(chat_id: int):
     await chatsdbc.delete_one({"chat_id": chat_id})
     
+
+async def is_superbanned_user(user_id: int) -> bool:
+    user = await superbans.find_one({"user_id": user_id})
+    return bool(user)
+
+
+async def add_superban_user(
+    user_id: int,
+    banned_by: int,
+    reason: str = "No reason provided",
+):
+    if await is_superbanned_user(user_id):
+        return False
+
+    await superbans.insert_one(
+        {
+            "user_id": user_id,
+            "banned_by": banned_by,
+            "reason": reason,
+        }
+    )
+    return True
+
+
+async def remove_superban_user(user_id: int) -> bool:
+    if not await is_superbanned_user(user_id):
+        return False
+
+    await superbans.delete_one({"user_id": user_id})
+    return True
+
+
+async def get_superbanned_users() -> list:
+    users = []
+    async for user in superbans.find({"user_id": {"$gt": 0}}):
+        users.append(user["user_id"])
+    return users
