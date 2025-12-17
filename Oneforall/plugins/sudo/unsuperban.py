@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from ..decorators.sudo import SudoUsersOnly
+from Oneforall.decorators.sudo import SudoUsersOnly
 from Oneforall.utils.database import superbans
 from Oneforall.config import LOG_CHANNEL
 
