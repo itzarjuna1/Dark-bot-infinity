@@ -10,7 +10,7 @@ from Oneforall.utils.database import (
     get_authuser_names,
     save_authuser,
 )
-from Oneforall.utils.decorators.admin import AdminActual
+from Oneforall.utils.decorators.admins import AdminActual
 from Oneforall.utils.decorators import language
 from Oneforall.utils.inline import close_markup
 
