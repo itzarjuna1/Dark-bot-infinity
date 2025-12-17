@@ -115,6 +115,13 @@ def PlayWrapper(command):
         if not await is_active_chat(chat_id):
             userbot = await get_assistant(chat_id)
             try:
+                userbot = await get_assistant(chat_id)
+       if not userbot:
+          return await message.reply_text(
+            "❌ No assistant found for this chat. Add an assistant first."
+       )
+
+get = await app.get_chat_member(chat_id, userbot.me.id)
                 get = await app.get_chat_member(chat_id, userbot.me.id)
                 if get.status in [ChatMemberStatus.BANNED, ChatMemberStatus.RESTRICTED]:
                     return await message.reply_text(
