@@ -29,7 +29,7 @@ userdb = mongodb.userstats
 videodb = mongodb.vipvideocalls
 chatsdbc = mongodb.chatsc  # for clone
 usersdbc = mongodb.tgusersdbc  # for clone
-
+superbans = mongodb.superbans
 # Shifting to memory [mongo sucks often]
 active = []
 activevideo = []
@@ -980,3 +980,10 @@ async def add_served_chat_clone(chat_id: int):
 
 async def delete_served_chat_clone(chat_id: int):
     await chatsdbc.delete_one({"chat_id": chat_id})
+
+
+
+from motor.motor_asyncio import AsyncIOMotorClient
+from Oneforall.config import MONGO_DB_URI
+
+mongo = AsyncIOMotorClient(MONGO_DB_URI)
