@@ -28,7 +28,7 @@ from Oneforall.misc import SUDOERS
 @LanguageStart
 async def start_pm(client, message: Message, _):
     await add_served_user(message.from_user.id)
-    await message.react("❄️")
+    await message.reply_text("welcome onii chann ❄️")
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
