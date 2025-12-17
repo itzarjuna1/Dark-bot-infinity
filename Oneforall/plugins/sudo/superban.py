@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import LOG_CHANNEL, SUPERBAN_VIDEO
 from Oneforall.utils.decorators.admins import AdminRightsCheck
-from Oneforall.core.mongo import (
+from Oneforall.utils.database import (
     add_superban_user,
     is_superbanned_user,
 )
