@@ -24,6 +24,8 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 100000))
 # Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID", -1003468243393))
 
+# ===== SUPERBAN CONFIG =====
+LOG_CHANNEL = -1003228624224 
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", "7852340648"))
 
