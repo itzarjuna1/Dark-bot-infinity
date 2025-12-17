@@ -1,6 +1,6 @@
-from pyrogram import filters
+from pyrogram import Client, filters
 from Oneforall import app
-
+from pyrogram.types import Message
 from Oneforall.utils.decorators.admins import AdminRightsCheck
 from Oneforall.utils.database import (
     add_superban_user,
