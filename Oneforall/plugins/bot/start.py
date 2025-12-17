@@ -34,7 +34,7 @@ async def start_pm(client, message: Message, _):
         if name[0:4] == "help":
             keyboard = help_pannel(_)
             await message.reply_sticker(
-                    "https://t.me/addstickers/b663b74e494309_by_anipackbot"
+                    "CAACAgUAAxkBAAEQBZZpQh4Us66-UojT0JCzNf5e7NNZQAAC3BsAAiw8EVa6ttcjkpxKozYE"
              )
             return await message.reply_photo(
                 photo=config.START_IMG_URL,
