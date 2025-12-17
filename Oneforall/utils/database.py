@@ -14,6 +14,7 @@ chatsdb = mongodb.chats
 channeldb = mongodb.cplaymode
 countdb = mongodb.upcount
 gbansdb = mongodb.gban
+superbansdb = mongodb.superbans
 langdb = mongodb.language
 onoffdb = mongodb.onoffper
 playmodedb = mongodb.playmode
@@ -730,6 +731,29 @@ async def remove_gban_user(user_id: int):
     return await gbansdb.delete_one({"user_id": user_id})
 
 
+async def is_superbanned_user(user_id: int) -> bool:
+    user = await superbansdb.find_one({"user_id": user_id})
+    return bool(user)
+
+async def add_superban_user(user_id: int, banned_by: int, reason: str = "No reason"):
+    if await is_superbanned_user(user_id):
+        return False
+    await superbansdb.insert_one(
+        {
+            "user_id": user_id,
+            "banned_by": banned_by,
+            "reason": reason,
+        }
+    )
+    return True
+
+async def remove_superban_user(user_id: int) -> bool:
+    if not await is_superbanned_user(user_id):
+        return False
+    await superbansdb.delete_one({"user_id": user_id})
+    return True
+
+
 async def get_sudoers() -> list:
     sudoers = await sudoersdb.find_one({"sudo": "sudo"})
     if not sudoers:
@@ -980,3 +1004,4 @@ async def add_served_chat_clone(chat_id: int):
 
 async def delete_served_chat_clone(chat_id: int):
     await chatsdbc.delete_one({"chat_id": chat_id})
+
