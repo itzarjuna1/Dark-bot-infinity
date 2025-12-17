@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from Oneforall.utils.decorators.sudo import SudoUsersOnly
 from Oneforall.utils.database import superbans
-from Oneforall.config import LOG_CHANNEL
+from .config import LOG_CHANNEL
 
 @Client.on_message(filters.command("unsuperban"))
 @SudoUsersOnly
