@@ -1,7 +1,6 @@
 import config
-
-print("DEBUG: Assistant session strings:")
-print(config.STRING1, config.STRING2, config.STRING3, config.STRING4, config.STRING5)
+print("DEBUG CONFIG PATH:", config.__file__)
+print("DEBUG STRINGS:", repr(config.STRING1), repr(config.STRING2))
 
 import asyncio
 import importlib
