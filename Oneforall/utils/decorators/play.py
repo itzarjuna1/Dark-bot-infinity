@@ -10,7 +10,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PLAYLIST_IMG_URL, SUPPORT_CHAT, adminlist
 from Oneforall import YouTube, app
-from Oneforall.core.client import userbot, Hotty  # Shared clients
+from Oneforall import app, userbot  # Use the instances from __init__.py
 from Oneforall.misc import SUDOERS
 from Oneforall.utils.database import (
     get_assistant,
