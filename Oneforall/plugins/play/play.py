@@ -567,3 +567,4 @@ async def play_playlists_command(client, CallbackQuery, _):
                 videoid,
                 config.PLAYLIST_FETCH_LIMIT,
                 Callb
+            )
