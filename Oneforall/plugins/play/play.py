@@ -188,7 +188,9 @@ async def play_commnd(
             spotify = True
             if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
                 return await mystic.edit_text(
-                    "» sᴘᴏᴛɪғʏ ɪs ɴᴏᴛ sᴜᴘᴘᴏʀᴛᴇᴅ ʏᴇᴛ.\n\nᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ."
+                    "» sᴘᴏᴛɪғʏ ɪs ɴᴏᴛ sᴜᴘᴘᴏʀᴛᴇᴅ ʏᴇᴛ.
+
+ᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ."
                 )
             if "track" in url:
                 try:
@@ -505,7 +507,12 @@ async def play_music(client, CallbackQuery, _):
 async def piyush_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
-            "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ :\n\nᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.\n-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs\n-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ\n-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
+            "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴏᴜɴᴛ :
+
+ᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.
+-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs
+-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ
+-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
             show_alert=True,
         )
     except:
@@ -525,26 +532,38 @@ async def play_playlists_command(client, CallbackQuery, _):
         cplay,
         fplay,
     ) = callback_request.split("|")
+
     if CallbackQuery.from_user.id != int(user_id):
         try:
             return await CallbackQuery.answer(_["playcb_1"], show_alert=True)
         except:
             return
+
     try:
         chat_id, channel = await get_channeplayCB(_, cplay, CallbackQuery)
     except:
         return
+
     user_name = CallbackQuery.from_user.first_name
-    await CallbackQuery.message.delete()
-    if ptype == "yt":
-    spotify = False
     try:
-        result = await YouTube.playlist(
-            videoid,
-            config.PLAYLIST_FETCH_LIMIT
-        )
-    except Exception as e:
-        await mystic.edit_text(
-            _["play_3"]
-        )
-        return
+        await CallbackQuery.message.delete()
+        await CallbackQuery.answer()
+    except:
+        pass
+
+    mystic = await CallbackQuery.message.reply_text(
+        _["play_2"].format(channel) if channel else _["play_1"]
+    )
+
+    spotify = False
+    details = None
+    plist_type = None
+    streamtype = "playlist"
+
+    try:
+        if ptype == "yt":
+            # Here videoid is playlist id or url
+            details = await YouTube.playlist(
+                videoid,
+                config.PLAYLIST_FETCH_LIMIT,
+                Callb
