@@ -115,13 +115,13 @@ def PlayWrapper(command):
         if not await is_active_chat(chat_id):
             userbot = await get_assistant(chat_id)
             try:
-                userbot = await get_assistant(chat_id)
+    userbot = await get_assistant(chat_id)
     if not userbot:
         return await message.reply_text(
             "❌ No assistant found for this chat. Add an assistant first."
         )
 except Exception as e:
-    # Optional: handle the error or just pass
+    # Optional: handle error or just ignore
     return await message.reply_text(
         f"❌ Something went wrong: {e}"
     )
