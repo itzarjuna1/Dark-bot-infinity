@@ -27,6 +27,14 @@ LOGGER_ID = int(getenv("LOGGER_ID", -1003468243393))
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID","7651303468"))
 
+#suoerban channel id and video 
+# Superban / Logging
+LOG_CHANNEL = int(getenv("LOG_CHANNEL", -1003132769250))
+SUPERBAN_VIDEO = getenv(
+    "SUPERBAN_VIDEO",
+    "https://files.catbox.moe/qpmy2w.mp4"
+)
+
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
