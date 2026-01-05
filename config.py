@@ -8,15 +8,15 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID", "33984428"))
-API_HASH = getenv("API_HASH", "9ed45ce2cfa2dcf20895d8949a56ecbb")
+API_ID = int(getenv("API_ID", "37467897"))
+API_HASH = getenv("API_HASH", "b1c9ba3d6180a099e35d6498d8434bf0")
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN","")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://knight4563:knight4563@cluster0.a5br0se.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "roshni_music")
+MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://Coderkuze:kuze123@cluster0.bmuxyeo.mongodb.net/?appName=Cluster0")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Dark-bot-knight")
 PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 100000))
@@ -24,27 +24,25 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 100000))
 # Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID", -1003468243393))
 
-# ===== SUPERBAN CONFIG =====
-LOG_CHANNEL = -1003228624224 
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "7852340648"))
+OWNER_ID = int(getenv("OWNER_ID","7651303468"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
-
+#upstream repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/itzarjuna1/Dark-bot-infinity",
+    "https://github.com/itzarjuna1/Dark-bot-knight",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/who_cares_qt")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/dark_musictm")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/dark_musicsupport")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
@@ -57,11 +55,11 @@ AUTO_GCAST = os.getenv("AUTO_GCAST")
 AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "")
 
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "6fb7e1766693439b86ec57e3deb3c36f")
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "bcfe26b0ebc3428882a0b5fb3e872473")
 SPOTIFY_CLIENT_SECRET = getenv(
-    "SPOTIFY_CLIENT_SECRET", "da3f94c6a68d49f6b64a7216ec9eb905"
+    "SPOTIFY_CLIENT_SECRET", "907c6a054c214005aeae1fd752273cc4"
 )
-
+YOUTUBE_API_KEY = getenv("YOUTUBE_API_KEY","5850344558mshe4ec4f98017cdd5p15d0d2jsnc8ef41e1fe8c")
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "1000"))
@@ -77,8 +75,8 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @BRANDEDSTRINGSESSION_BOT on Telegram
-STRING1 = getenv("STRING_SESSION",  None)
-STRING2 = getenv("STRING_SESSION2", "")
+STRING1 = getenv("STRING_SESSION", "")
+STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
@@ -93,19 +91,19 @@ autoclean = []
 confirmer = {}
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/zi9qyb.jpg")
-PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/zi9qyb.jpg")
-PLAYLIST_IMG_URL = "https://files.catbox.moe/zi9qyb.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/zi9qyb.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/zi9qyb.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/zi9qyb.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/zi9qyb.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/zi9qyb.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/zi9qyb.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/zi9qyb.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/zi9qyb.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/zi9qyb.jpg"
-SUPERBAN_VIDEO = "https://files.catbox.moe/zlj0vt.mp4"
+START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/b8j4a8.jpg")
+PING_IMG_URL = getenv("PING_IMG_URL", "https://graph.org/file/88c43dfc225cf46db1792-007008bbe37f49cf84.jpg")
+PLAYLIST_IMG_URL = "https://graph.org/file/88c43dfc225cf46db1792-007008bbe37f49cf84.jpg"
+STATS_IMG_URL = "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg"
+STREAM_IMG_URL = "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg"
+
 
 def time_to_seconds(time):
     stringt = str(time)
