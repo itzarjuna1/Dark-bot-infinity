@@ -536,21 +536,15 @@ async def play_playlists_command(client, CallbackQuery, _):
         return
     user_name = CallbackQuery.from_user.first_name
     await CallbackQuery.message.delete()
-    try:
-        await CallbackQuery.answer()
-    except:
-        pass
-    mystic = await CallbackQuery.message.reply_text(
-        _["play_2"].format(channel) if channel else _["play_1"]
-    )
-    videoid = lyrical.get(videoid)
-    video = True if mode == "v" else None
-    ffplay = True if fplay == "f" else None
-    spotify = True
     if ptype == "yt":
-        spotify = False
-        try:
-            result = await YouTube.playlist(
-                videoid,
-                config.PLAYLIST_FETCH_LIMIT
-            )
+    spotify = False
+    try:
+        result = await YouTube.playlist(
+            videoid,
+            config.PLAYLIST_FETCH_LIMIT
+        )
+    except Exception as e:
+        await mystic.edit_text(
+            _["play_3"]
+        )
+        return
