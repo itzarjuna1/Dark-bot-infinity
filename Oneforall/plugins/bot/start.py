@@ -29,15 +29,19 @@ from Oneforall.misc import SUDOERS
 async def start_pm(client, message: Message, _):
     await add_served_user(message.from_user.id)
     await message.reply_text("💸 welcome onii chann ❄️")
+ loading_1 = await message.reply_text("<b>ʟᴏᴀᴅɪɴɢ</b>")
+await loading_1.edit_text("<b>ʟᴏᴀᴅɪɴɢ...</b>")
+    await asyncio.sleep(0.1)
+ loading_2 = await message.reply_text("<b>ʟᴏᴀᴅɪɴɢ</b>")
+await loading_2.edit_text("<b>ʟᴏᴀᴅɪɴɢ.</b>")
+    await asyncio.sleep(0.1)
+loading_3 = await message.reply_text("<b>ʟᴏᴀᴅɪɴɢ</b>")
+await loading_3.edit_text("<b>ʟᴏᴀᴅɪɴɢ..</b>")
+    await asyncio.sleep(0.1)
+loading_4 = await message.reply_text("<b>ʟᴏᴀᴅɪɴɢ</b>")
+ await loading_4.edit_text("<b>ʟᴏᴀᴅɪɴɢ...</b>")
+    await asyncio.sleep(0.1)
 
-    await loading_1.edit_text("<b>ʟᴏᴀᴅɪɴɢ</b>")
-    await asyncio.sleep(0.1)
-    await loading_1.edit_text("<b>ʟᴏᴀᴅɪɴɢ.</b>")
-    await asyncio.sleep(0.1)
-    await loading_1.edit_text("<b>ʟᴏᴀᴅɪɴɢ..</b>")
-    await asyncio.sleep(0.1)
-    await loading_1.edit_text("<b>ʟᴏᴀᴅɪɴɢ...</b>")
-    await asyncio.sleep(0.1)
     await loading_1.delete()
     
     if len(message.text.split()) > 1:
